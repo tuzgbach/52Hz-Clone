@@ -1,0 +1,421 @@
+/* Navbar Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /* Kích thước chữ mặc định */
+  font-weight: 400; /* Độ đậm mặc định */
+}
+
+/* Thiết lập màu nền và màu chữ cho Navbar */
+#navbar {
+  background-color: #36a9d0; /* Màu nền xanh dương */
+  color: #fff; /* Màu chữ trắng */
+}
+
+/* Đặt font và khoảng cách văn bản cho navbar-brand */
+#logo {
+  font-size: 30px; /* Kích thước chữ lớn hơn */
+  font-weight: 500; /* Độ đậm trung bình */
+  letter-spacing: 0.5px; /* Khoảng cách giữa chữ */
+}
+
+/* Đặt màu chữ và nền cho các nav-link */
+.nav-item .nav-link {
+  color: #fff; /* Màu chữ trắng */
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền và chữ */
+}
+
+/* Để thay đổi màu nền cho Navbar khi cuộn trang */
+
+/* CSS cho Form Tìm kiếm */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid #ffffff; /* Đường viền cam */
+  border-radius: 25px; /* Đường viền cong */
+  outline: none;
+  font-size: 14px;
+  width: 200px; /* Độ rộng của ô nhập */
+  background-color: white; /* Màu nền trắng */
+  color: black; /* Màu chữ đen */
+}
+
+.search-input::placeholder {
+  color: #1f1f1f; /* Màu chữ mờ (placeholder) */
+}
+
+.search-button {
+  background-color: #ffffff; /* Màu nền cam */
+  color: rgb(60, 60, 60); /* Màu chữ trắng */
+  border: none;
+  border-radius: 25px; /* Đường viền cong */
+  padding: 10px 20px; /* Khoảng cách nội dung bên trong nút */
+  margin-left: 10px; /* Khoảng cách bên trái của nút so với ô nhập */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng khi hover */
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("/images/party.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.home .content h1 {
+  color: #fff; /* Màu chữ trắng */
+  font-size: 30px; /* Kích thước chữ nhỏ hơn */
+  font-weight: 500; /* Độ đậm trung bình */
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+
+.home .content p {
+  font-family: "svn", Sans-serif;
+  font-size: 12px; /* Kích thước chữ nhỏ hơn */
+  line-height: 1.4em;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.changecontent::after {
+  content: " ";
+  color: #ffa500;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+  0% {
+    content: "France";
+  }
+  /* ... */
+  100% {
+    content: "United Kingdom";
+  }
+}
+
+.home .content p {
+  color: #fff;
+  font-size: 14px; /* Kích thước chữ mặc định */
+  font-weight: 400; /* Độ đậm mặc định */
+  margin-bottom: 20px; /* Khoảng cách dưới cùng */
+}
+
+.home .content a {
+  padding: 8px 16px; /* Khoảng cách nội dung bên trong nút */
+  background: #fff; /* Màu nền trắng */
+  color: #000; /* Màu chữ đen */
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.home .content a:hover {
+  background: #36a9d0; /* Màu nền cam khi hover */
+  color: #fff; /* Màu chữ trắng khi hover */
+}
+
+@media (max-width: 850px) {
+  .home {
+    background-position: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .home .content h5 {
+    font-size: 22px; /* Kích thước chữ nhỏ hơn */
+  }
+
+  .home .content h1 {
+    font-size: 28px; /* Kích thước chữ nhỏ hơn */
+  }
+
+  .home .content p {
+    font-size: 12px; /* Kích thước chữ nhỏ hơn */
+  }
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book {
+  background: #f9f9f9;
+  padding: 20px; /* Giảm khoảng cách padding */
+}
+
+.main-text h2 {
+  text-align: center;
+}
+
+.main-text h1 span {
+  color: #36a9d0;
+}
+
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+  margin-top: 20px; /* Giảm khoảng cách trên cùng */
+}
+
+.book form input {
+  padding: 10px;
+  color: #000; /* Màu chữ đen */
+  border: none;
+  outline: none;
+  font-size: 14px; /* Kích thước chữ mặc định */
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  height: 200px;
+}
+
+.book .submit {
+  width: 150px; /* Độ rộng nút */
+  font-size: 14px; /* Kích thước chữ mặc định */
+  font-weight: 500; /* Độ đậm trung bình */
+  background: #36a9d0;
+  color: #fff;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.book .submit:hover {
+  width: 160px; /* Độ rộng nút tăng khi hover */
+}
+
+@media (max-width: 765px) {
+  .book {
+    padding: 0;
+  }
+
+  .main-text h1 {
+    padding: 10px;
+  }
+}
+/* Section Book End */
+
+/* Section Packages Start */
+.main-txt h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main-txt h1 span {
+  color: #ffa500;
+}
+
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+  border-radius: 5px;
+}
+
+.packages .card .card-body {
+  background: transparent;
+}
+
+.packages .card .card-body h3 {
+  font-size: 18px; /* Kích thước chữ nhỏ hơn */
+  font-weight: 600;
+}
+
+.packages .card .card-body p {
+  font-size: 12px; /* Kích thước chữ nhỏ hơn */
+}
+
+.checked {
+  color: #ffa500;
+}
+
+.star i {
+  font-size: 14px; /* Kích thước chữ nhỏ hơn */
+}
+
+.packages .card .card-body h6 {
+  font-size: 16px; /* Kích thước chữ nhỏ hơn */
+}
+
+.packages .card .card-body a {
+  padding: 8px 16px; /* Khoảng cách nội dung bên trong nút */
+  text-decoration: none;
+  background: #ffa500;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px; /* Kích thước chữ nhỏ hơn */
+  font-weight: 500; /* Độ đậm trung bình */
+}
+
+.packages button {
+  background-color: #36a9d0; /* Màu cam */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Loại bỏ đường viền */
+  border-radius: 5px; /* Đường viền cong */
+  padding: 10px 20px; /* Khoảng cách nội dung bên trong nút */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: bold; /* Độ đậm của chữ */
+  cursor: pointer; /* Biến đổi con trỏ thành mũi tên khi di chuột qua nút */
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng khi hover */
+}
+/* Section Packages End */
+
+/* Section Services Start */
+.services {
+  background: #f9f9f9;
+  margin-top: 30px; /* Giảm khoảng cách trên cùng */
+}
+
+.services .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.services .card i {
+  font-size: 50px; /* Kích thước biểu tượng nhỏ hơn */
+  text-align: center;
+  color: #36a9d0;
+  margin-top: 20px;
+}
+
+.services .card .card-body h3 {
+  font-weight: 600;
+}
+
+.services .card .card-body {
+  text-align: center;
+}
+/* Section Services End */
+
+/* Section Gallary Start */
+.gallary {
+  margin-top: 30px; /* Giảm khoảng cách trên cùng */
+}
+
+.gallary .card {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gallary .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.gallary .card img:hover {
+  transform: scale(1.1);
+}
+/* Section Gallary End */
+
+/* About Start */
+.about {
+  padding: 20px; /* Giảm khoảng cách padding */
+  margin-top: 30px; /* Giảm khoảng cách trên cùng */
+  background: #f9f9f9;
+}
+
+.about .card {
+  border-radius: 10px;
+}
+
+.about .card img {
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#about-btn {
+  width: 130px; /* Độ rộng nút */
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #36a9d0;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#about-btn:hover {
+  width: 140px; /* Độ rộng nút tăng khi hover */
+}
+
+@media (max-width: 765px) {
+  .about {
+    padding: 0;
+  }
+}
+/* About End */
+
+/* Footer Start */
+#footer {
+  width: 100%;
+  margin-top: 50px; /* Giảm khoảng cách trên cùng */
+  text-align: center;
+  background: #f9f9f9;
+}
+
+#footer h1 {
+  font-weight: 600;
+  padding-top: 20px; /* Giảm khoảng cách trên cùng */
+  text-shadow: 0px 0px 1px black;
+}
+
+#footer h1 span {
+  color: #ffa500;
+}
+
+.social-links i {
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #000; /* Màu nền đen */
+  color: #fff; /* Màu chữ trắng */
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-links i:hover {
+  background: #36a9d0;
+}
+/* Footer End */

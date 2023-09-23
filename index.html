@@ -1,0 +1,479 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đi cho biết</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo">52Hz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">Đặt tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallary">Tour đặc biệt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Về chúng tôi</a>
+            </li>
+          </ul>
+          <form class="search-form">
+            <input class="search-input" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button" type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home start -->
+    <div class="home">
+      <div class="content">
+        <p>
+          Cá Voi xin chào! Bạn đang ghé qua website của 52Hz - Cộng đồng kết nối
+          những người độc thân hiện đại và tích cực. Mang tần số đặc biệt, đội
+          ngũ Cá Voi hiểu rằng bạn đang tìm kiếm một hành trình về với thiên
+          nhiên thật khác - Nơi có những người bạn mới đồng điệu về sở thích và
+          tâm hồn. Không gian này là dành cho bạn, khám phá ngay!
+        </p>
+        <a href="#"> Đặt tour ngay</a>
+      </div>
+    </div>
+    <!-- Home end -->
+
+    <!-- book tour start -->
+    <section class="book" id="book">
+      <div class="container">
+        <div class="main-text">
+          <h2>Hành trình bắt đầu từ những bước chân bé nhỏ</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card img-fluid">
+              <img src="/images/booktour.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="#">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tour Đến"
+                required /><br />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ngày đặt"
+                required /><br />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Arrivals"
+                required /><br />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Leaving"
+                required /><br />
+              <textarea
+                class="form-control"
+                rows="5"
+                name="text"
+                placeholder="Nhập họ tên của bạn"></textarea>
+              <input type="submit" value="Đặt ngay" class="submit" required />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- book tour end -->
+
+    <!-- Section Packages Start -->
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="main-txt">
+          <h1>Trekking độc thân</h1>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/tnpd.jpg" alt="" />
+              <div class="card-body">
+                <h3>Tà năng-Phan Dũng</h3>
+                <p>
+                  Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một
+                  hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo
+                  dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến
+                  người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình
+                  trong mộng lần đầu tiên.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="mt-2">Đặt tour ngay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cucdong.jpg" alt="" class="img-fluid" />
+              <div class="card-body">
+                <h3>Tà năng-Phan Dũng</h3>
+                <p>
+                  Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một
+                  hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo
+                  dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến
+                  người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình
+                  trong mộng lần đầu tiên.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="mt-2">Đặt tour ngay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/chubukk.jpg" alt="" class="img-fluid" />
+              <div class="card-body">
+                <h3>Tà năng-Phan Dũng</h3>
+                <p>
+                  Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một
+                  hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo
+                  dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến
+                  người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình
+                  trong mộng lần đầu tiên.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="mt-2">Đặt tour ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/tnpd2.jpg" alt="" class="img-fluid" />
+              <div class="card-body">
+                <h3>Tà năng-Phan Dũng</h3>
+                <p>
+                  Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một
+                  hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo
+                  dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến
+                  người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình
+                  trong mộng lần đầu tiên.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="mt-2">Đặt tour ngay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/nui2.jpg" alt="" class="img-fluid" />
+              <div class="card-body">
+                <h3>Tà năng-Phan Dũng</h3>
+                <p>
+                  Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một
+                  hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo
+                  dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến
+                  người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình
+                  trong mộng lần đầu tiên.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="mt-2">Đặt tour ngay</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cucdong2.jpg" alt="" class="img-fluid" />
+              <div class="card-body">
+                <h3>Tà năng-Phan Dũng</h3>
+                <p>
+                  Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một
+                  hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo
+                  dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến
+                  người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình
+                  trong mộng lần đầu tiên.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="mt-2">Đặt tour ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Packages Start -->
+
+    <!-- Section Services Start -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="main-txt">
+          <h1>Dịch vụ</h1>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Affordable Hotel</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Food & Drinks</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Safty Guide</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Around The World</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Fastest Travel</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Adventures</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Services End -->
+
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+        <div class="main-txt">
+          <h1>KẾT NỐI TẦN SỐ CỦA BẠN</h1>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/1.jpg" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/2.jpg" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/3.jpg" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/4.jpg" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/5.jpg" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/6.jpg" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="main-txt">
+          <h1>KHÔNG CHỈ LÀ MỘT CHUYẾN ĐI</h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/chưbu.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-md-0">
+            <h2>52Hz THẤU HIỂU BẠN</h2>
+            <p>
+              KHÔNG CHỈ LÀ MỘT CHUYẾN ĐI: Đội ngũ 52Hz ở đây bởi chúng tôi nghĩ
+              rằng bạn không đơn giản chỉ chọn một chuyến du lịch thuần tuý.
+              52Hz mong rằng từ khi gặp bạn, mọi khoảnh khắc sẽ trở nên trọn
+              vẹn, chúng tôi tin bạn cần được kết nối nhiều hơn một chuyến đi.
+              KẾT NỐI TẦN SỐ CỦA BẠN: 52Hz chọn thiết kế chương trình dành riêng
+              cho khách hàng độc thân, bởi chúng tôi mong muốn dù bạn đi một
+              mình cũng sẽ không lạc lỏng trong chuyến đi, cơ hội để gặp gỡ, kết
+              nối thêm nhiều bạn mới trong hành trình có cùng đam mê, sở thích,
+              cùng yêu thiên nhiên là điều chắc chắn xảy ra. 52Hz LUÔN ĐỢI BẠN:
+              Nếu bạn vẫn còn phân vân thì ở 52Hz, chúng tôi đã sẵn sàng cho
+              chuyến đi của bạn. Việc còn lại chỉ cần bạn đồng ý tiếp cận tần số
+              của những chú cá voi 52Hz như cách bạn đang muốn. Chúng tôi đợi
+              bạn.
+            </p>
+            <button id="about-btn">Đọc thêm....</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Footer Start -->
+    <footer id="footer">
+      <h1>52Hz</h1>
+      <p>
+        52Hz LUÔN ĐỢI BẠN: Nếu bạn vẫn còn phân vân thì ở 52Hz, chúng tôi đã sẵn
+        sàng cho chuyến đi của bạn. Việc còn lại chỉ cần bạn đồng ý tiếp cận tần
+        số của những chú cá voi 52Hz như cách bạn đang muốn. Chúng tôi đợi bạn.
+      </p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#">SA Coding</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
